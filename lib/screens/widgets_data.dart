@@ -6,19 +6,19 @@ import '../widgets/button.dart';
 List<Widget> buttonList = [
   const Button1(
     label: "C",
-    textColor: AppColors.secondaryColor,
+    textColor: Color.fromARGB(255, 7, 118, 111),
   ),
   const Button1(
     label: "/",
-    textColor: AppColors.secondaryColor,
+    textColor: Color.fromARGB(255, 7, 118, 111),
   ),
   const Button1(
     label: "X",
-    textColor: AppColors.secondaryColor,
+    textColor: Color.fromARGB(255, 7, 118, 111),
   ),
   const Button1(
     label: "AC",
-    textColor: AppColors.secondaryColor,
+    textColor: Color.fromARGB(255, 7, 118, 111),
   ),
   const Button1(
     label: "7",
@@ -31,7 +31,7 @@ List<Widget> buttonList = [
   ),
   const Button1(
     label: "+",
-    textColor: AppColors.secondaryColor,
+    textColor: Color.fromARGB(255, 7, 118, 111),
   ),
   const Button1(
     label: "4",
@@ -44,7 +44,7 @@ List<Widget> buttonList = [
   ),
   const Button1(
     label: "-",
-    textColor: AppColors.secondaryColor,
+    textColor: Color.fromARGB(255, 7, 118, 111),
   ),
   const Button1(
     label: "1",
@@ -63,5 +63,8 @@ List<Widget> buttonList = [
   ),
   const Button1(
     label: ".",
+  ),
+  const Button1(
+    label: "log",
   ),
 ];

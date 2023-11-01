@@ -13,10 +13,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.sizeOf(context).height;
-    const padding = EdgeInsets.symmetric(horizontal: 15, vertical: 20);
+    const padding = EdgeInsets.symmetric(horizontal: 100, vertical: 30);
     const decoration = BoxDecoration(
         color: AppColors.primaryColor,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)));
+        borderRadius: BorderRadius.vertical(top: Radius.circular(30)));
 
     return Consumer<CalculatorProvider>(builder: (context, provider, _) {
       return Scaffold(
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const Spacer(),
             Container(
-              height: screenHeight * 0.5,
+              height: screenHeight * 0.6,
               width: double.infinity,
               padding: padding,
               decoration: decoration,
@@ -41,12 +41,17 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: List.generate(8, (index) => buttonList[index]),
+                    children: List.generate(4, (index) => buttonList[index]),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children:
-                        List.generate(8, (index) => buttonList[index + 8]),
+                        List.generate(4, (index) => buttonList[index + 4]),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children:
+                        List.generate(4, (index) => buttonList[index + 8]),
                   ),
                   Row(
                     children: [
@@ -59,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                                   3, (index) => buttonList[index + 12]),
                             ),
                             const SizedBox(
-                              height: 10,
+                              height: 20,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        width: 10,
+                        width: 20,
                       ),
                       const CalculateButton()
                     ],

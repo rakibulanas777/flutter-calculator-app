@@ -18,7 +18,7 @@ class CalculateButton extends StatelessWidget {
         height: 100,
         width: 50,
         decoration: BoxDecoration(
-            color: AppColors.secondaryColor,
+            color: Color.fromARGB(255, 7, 118, 111),
             borderRadius: BorderRadius.circular(50)),
         child: const Center(
           child: Text(
